@@ -36,6 +36,7 @@
   
   function execDaumPostcode() {
     new daum.Postcode({
+      shorthand:false,
       oncomplete: function(data) {
         
         var fullAddr = data.address; // 최종 주소 변수
